@@ -8,7 +8,6 @@ if (isset($_SESSION["ID"])) {
     $price = $_SESSION["Price"];
     $quantity = $_SESSION["Quantity"];
 
-    // 存入Cookie（陣列概念）
     setcookie($id."[ID]", $id, time()+3600);
     setcookie($id."[Name]", $name, time()+3600);
     setcookie($id."[Price]", $price, time()+3600);
